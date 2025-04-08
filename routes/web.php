@@ -10,7 +10,7 @@ use App\Services\ProductService;
 
 
 Route::get('/', function () {
-    return view('welcome', ['name' => 'jervie-app']);
+    return view('welcome', ['name' => 'ternate-app']);
 });
 
 Route::get('/users', [UserController::class, 'index']);
@@ -83,7 +83,7 @@ Route::post('/token', function (Request $request){
 });
 
 // //Controller -> Middleware
-Route::get('/users', [UserController::class, 'Index'])->middleware('user-middleware');
+/* Route::get('/users', [UserController::class, 'Index'])->middleware('user-middleware');
 
 // //Resource
 Route::resource('products', Product::class);
@@ -92,4 +92,4 @@ Route::resource('products', Product::class);
 Route::get('/product-list', function (ProductService $productService){
      $data['products'] = $productService->listProducts();
      return view('products.list', $data);
- });
+ }); */

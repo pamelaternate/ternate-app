@@ -3,7 +3,7 @@ namespace App\Services;
 
 use Illuminate\Support\ServiceProvider;
 
-class UserService{
+class UserService {
     
     protected $users;
 

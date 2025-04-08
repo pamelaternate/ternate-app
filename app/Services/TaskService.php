@@ -1,7 +1,7 @@
 <?php 
 namespace App\Services;
 
-class TaskService{
+class TaskService {
     protected $tasks = [];
 
     public function add($name){

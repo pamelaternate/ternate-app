@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
+          <x-nav-link href="/" :active="request()->is('home')">Home</x-nav-link>
         </li>
         <li class="nav-item">
             <x-nav-link href="/products" :active="request()->is('products')">Products</x-nav-link>
@@ -18,3 +18,4 @@
       </ul>
     </div>
   </div>
+</nav>
